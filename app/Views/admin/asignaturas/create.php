@@ -38,7 +38,8 @@ $this->section('title') ?>Crear asignatura<?= $this->endSection();
                     <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">Créditos:</label>
-                            <input type="number" max="20" min="0"
+                            <!-- Aumento de intervalo -->
+                            <input type="number" max="100" min="0"
                                    class="form-control <?php if ($validation->getError('creditos')): ?>is-invalid<?php endif ?>"
                                    name="creditos" placeholder="3" value="<?php echo set_value('creditos'); ?>"/>
                             <?php if ($validation->getError('creditos')): ?>
@@ -51,7 +52,7 @@ $this->section('title') ?>Crear asignatura<?= $this->endSection();
                     <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">Horas S/D/M:</label>
-                            <input type="number" min="0" max="10"
+                            <input type="number" min="0" max="50"
                                    class="form-control <?php if ($validation->getError('horasSemana')): ?>is-invalid<?php endif ?>"
                                    name="horasSemana" placeholder="3" value="<?php echo set_value('horasSemana'); ?>"/>
                             <?php if ($validation->getError('horasSemana')): ?>

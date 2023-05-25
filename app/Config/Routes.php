@@ -33,6 +33,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->resource('periodosescolares', ['controller' => 'Admin\PeriodoEscolarController']);
     $routes->resource('preguntas', ['controller' => 'Admin\PreguntaController']);
     $routes->resource('dimensiones', ['controller' => 'Admin\DimensionController']);
+    $routes->resource('carreras', ['controller' => 'Admin\CarreraController']);
 });
 
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {

@@ -1,18 +1,10 @@
 <?= $this->extend('admin/template/layout');
-
 $this->section('title') ?> Asignaturas <?= $this->endSection();
 ?>
-
-
 
 <?= $this->section('content'); ?>
 
 <div class="">
-    <div class="row py-4">
-        <div class="col-xl-12 text-end">
-            <a href="<?= base_url('admin/') ?>" class="btn btn-default">Regresar</a>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-xl-12">
@@ -34,13 +26,16 @@ $this->section('title') ?> Asignaturas <?= $this->endSection();
                 <div class="card-header">
                     <h5 class="card-title">Asignaturas</h5>
                     <a href="<?= base_url('admin/asignaturas/new') ?>" class="btn btn-primary float-right">Nueva asignatura</a>
+                    <div class="col-xl-12 text-end">
+                        <a href="<?= base_url('admin/') ?>" class="btn btn-default">Regresar</a>
+                    </div>
                 </div>
                 <div class="card-body">
                     <table id="example1" class="table table-striped">
                         <thead>
                         <tr>
                             <th>ASIGNATURA</th>
-                            <th>RESUMEN</th>
+                            <!-- <th>RESUMEN</th> -->
                             <th>DESCRIPCIÓN</th>
                             <th>TEMARIO</th>
                             <th>ACCIONES</th>
@@ -52,11 +47,11 @@ $this->section('title') ?> Asignaturas <?= $this->endSection();
                             foreach ($asignaturas as $asignatura): ?>
                                 <tr>
                                     <td><?= $asignatura['nombre']; ?> </td>
-                                    <td>
+                                    <!-- <td>
                                         <p>Créditos: <?= $asignatura['creditos']; ?></p>
                                         <p>Horas D/S/M: <?= $asignatura['horasSemana']; ?></p>
 
-                                    </td>
+                                    </td> -->
                                     <td><?= $asignatura['descripcion'] ?> </td>
                                     <td><?= $asignatura['temario'] ?></td>
                                     <td class="d-flex">

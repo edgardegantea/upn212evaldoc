@@ -59,6 +59,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="<?= base_url('admin/carreras'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-user-graduate"></i>
+                        <p>Carreras</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="<?= base_url('admin/modalidades'); ?>" class="nav-link">
                         <i class="nav-icon fas fa-voicemail"></i>
                         <p>Modalidades</p>
