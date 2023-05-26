@@ -2,12 +2,8 @@
 $this->section('title') ?> Modalidades <?= $this->endSection();
 ?>
 
-
-
 <?= $this->section('content'); ?>
-<div class="d-grid gap-2 d-md-flex justify-content-sm-end">
-    <a href="<?= base_url('admin/') ?>" class="btn btn-default float-right mb-3"><i class="fa fa-arrow-left"></i> Regresar</a>
-</div>
+
 <div class="">
     <div class="row">
         <div class="col-xl-12">
@@ -26,9 +22,10 @@ $this->section('title') ?> Modalidades <?= $this->endSection();
 
             <div class="card">
                 <div class="card-header">
-                    <h5 class="card-title">Sedes</h5>
-                    <a href="<?= base_url('admin/modalidades/new') ?>" class="btn btn-primary float-right">Nueva
-                        Modalidad</a>
+                    <h5 class="card-title">Modalidades</h5>
+                    <a href="<?= base_url('admin/modalidades/new') ?>" class="btn btn-primary float-right">Nueva modalidad</a>
+                    <a href="<?= base_url('admin/') ?>" class="btn btn-outline-secondary float-right mr-2"><i
+            class="fa fa-arrow-left"></i> Regresar</a>
                 </div>
                 <div class="card-body">
                     <table id="example" class="table table-bordered table-striped">

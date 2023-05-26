@@ -34,6 +34,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->resource('preguntas', ['controller' => 'Admin\PreguntaController']);
     $routes->resource('dimensiones', ['controller' => 'Admin\DimensionController']);
     $routes->resource('carreras', ['controller' => 'Admin\CarreraController']);
+    $routes->resource('profesores', ['controller' => 'Admin\ProfesorController']);
 });
 
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {

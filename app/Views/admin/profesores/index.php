@@ -1,11 +1,8 @@
 <?= $this->extend('admin/template/layout');
-$this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
+$this->section('title') ?>Profesores<?= $this->endSection();
 ?>
 
 <?= $this->section('content'); ?>
-<div class="d-grid gap-2 d-md-flex justify-content-sm-end">
-    
-</div>
 
 <div class="">
     <div class="row">
@@ -27,7 +24,7 @@ $this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
 
                 <div class="card-header">
                     <h5 class="card-title">Preguntas de la evaluación</h5>
-                    <a href="<?= base_url('admin/preguntas/new') ?>" class="btn btn-primary float-right">Nueva pregunta</a>
+                    <a href="<?= base_url('admin/profesores/new') ?>" class="btn btn-primary float-right">Nuevo profesor</a>
                     <a href="<?= base_url('admin/') ?>" class="btn btn-outline-secondary float-right"><i
             class="fa fa-arrow-left"></i> Regresar</a>
                 </div>
@@ -37,35 +34,35 @@ $this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
                         <thead>
                         <tr>
                             <!-- <th>ID</th> -->
-                            <th>PREGUNTA</th>
-                            <th>DIMENSIÓN</th>
+                            <th>PROFESOR</th>
+                            <th>ÁREA</th>
                             <th>ACCIONES</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php
-                        if (count($preguntas) > 0):
-                            foreach ($preguntas as $pregunta): ?>
+                        if (count($profesores) > 0):
+                            foreach ($profesores as $profesor): ?>
                                 <tr>
-                                    <!-- <td><?= $pregunta->id ?> </td> -->
+                                    <!-- <td><?= $profesor->id ?> </td> -->
                                     <td>
-                                        <?= $pregunta->pregunta ?>
+                                        <?= $profesor->nombre ?>
                                     </td>
                                     <td>
-                                        <?= $pregunta->dimension ?>
+                                        <?= $profesor->nombreArea ?>
                                     </td>
                                     <td class="d-flex">
-                                        <a href="<?= base_url('admin/preguntas/' . $pregunta->id) ?>"
+                                        <a href="<?= base_url('admin/profesores/' . $profesor->id) ?>"
                                            class="btn btn-default" title="Ver"><i class="fas fa-eye"></i></a>
                                         <!--
-                                        <a href="<?= base_url('admin/preguntas/' . $pregunta->id . '/edit') ?>"
+                                        <a href="<?= base_url('admin/profesores/' . $profesor->id . '/edit') ?>"
                                            class="btn btn-default" title="Editar"><i class="fas fa-edit"></i></a>
                                         <form class="display-none" method="post"
-                                              action="<?= base_url('admin/preguntas/' . $pregunta->id) ?>"
-                                              id="preguntaDeleteForm<?= $pregunta->id ?>">
+                                              action="<?= base_url('admin/profesores/' . $profesor->id) ?>"
+                                              id="preguntaDeleteForm<?= $profesor->id ?>">
                                             <input type="hidden" name="_method" value="DELETE"/>
                                             <a href="javascript:void(0)"
-                                               onclick="deletePregunta('preguntaDeleteForm<?= $pregunta->id ?>')"
+                                               onclick="deletePregunta('preguntaDeleteForm<?= $profesor->id ?>')"
                                                class="btn btn-default" title="Eliminar"><i class="fas fa-trash text-red"></i></a>
                                         </form>
                                         -->
@@ -75,7 +72,7 @@ $this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
                         else: ?>
                             <tr rowspan="1">
                                 <td colspan="4">
-                                    <h6 class="text-danger text-center">No hay información de usuarios registrados</h6>
+                                    <h6 class="text-danger text-center">No hay información de profesores registrados</h6>
                                 </td>
                             </tr>
                         <?php endif ?>
@@ -83,8 +80,8 @@ $this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
                         <tfoot>
                         <tr>
                             <!-- <th>ID</th> -->
-                            <th>PREGUNTA</th>
-                            <th>DIMENSIÓN</th>
+                            <th>PROFESOR</th>
+                            <th>ÁREA</th>
                             <th>ACCIONES</th>
                         </tr>
                         </tfoot>
@@ -97,8 +94,8 @@ $this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
 </div>
 
 <script>
-    function deletePregunta(formId) {
-        var confirm = window.confirm('¿Desea eliminar la pregunta seleccionada? Esta acción es irreversible.');
+    function deleteProfesor(formId) {
+        var confirm = window.confirm('¿Desea eliminar al profesor seleccionado? Esta acción es irreversible.');
         if (confirm == true) {
             document.getElementById(formId).submit();
         }

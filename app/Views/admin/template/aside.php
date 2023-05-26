@@ -41,6 +41,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="<?= base_url('admin/profesores'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>Profesores</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="<?= base_url('admin/asignaturas'); ?>" class="nav-link">
                         <i class="nav-icon fas fa-bookmark"></i>
                         <p>Asignaturas</p>
