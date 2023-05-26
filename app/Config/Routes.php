@@ -35,6 +35,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->resource('dimensiones', ['controller' => 'Admin\DimensionController']);
     $routes->resource('carreras', ['controller' => 'Admin\CarreraController']);
     $routes->resource('profesores', ['controller' => 'Admin\ProfesorController']);
+    $routes->resource('evaluacion', ['controller' => 'EvaluacionController']);
 });
 
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {
@@ -44,6 +45,7 @@ $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
     $routes->get('/', 'Estudiante\EstudianteController::index');
+    $routes->resource('evaluacion', ['controller' => 'EvaluacionController']);
 });
 
 $routes->get('logout', 'UserController::logout');

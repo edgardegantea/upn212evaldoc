@@ -7,7 +7,7 @@
 
 <?= $this->section('content'); ?>
 <div class="d-grid gap-2 d-md-flex justify-content-sm-end">
-<a href="<?= base_url('admin/') ?>" class="btn btn-default float-right mb-3"><i class="fa fa-arrow-left"></i> Regresar</a>
+
 </div>
 
 <div class="">
@@ -32,6 +32,7 @@
                 <div class="card-header">
                     <h5 class="card-title">Usuarios del sistema</h5>
                     <a href="<?= base_url('admin/usuarios/new') ?>" class="btn btn-primary float-right">Nuevo usuario</a>
+                    <a href="<?= base_url('admin/') ?>" class="btn btn-default float-right mr-2"><i class="fa fa-arrow-left"></i> Regresar</a>
                 </div>
                 <div class="card-body">
                     <table id="example1" class="table table-striped">

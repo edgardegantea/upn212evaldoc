@@ -3,16 +3,18 @@
 
     <a href="<?= base_url('/admin'); ?>" class="brand-link" style="text-decoration: none">
         <img src="<?= base_url('assets/img/logo/upnloader.png'); ?>" alt="Dashboard" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Evaluación docente</span>
+        <span class="brand-text font-weight-light">UPN 212 Teziutlán</span>
     </a>
 
     <div class="sidebar">
 
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image text-center">
+        <div class="user-panel ml-1 mt-3 pb-3 mb-3 d-flex">
+            <!--
+            <div class="image text-center ml-2">
                 <img src="<?= base_url('assets/dist/img/user2-160x160.jpg'); ?>" class="img-circle elevation-2" title="<?= session()->get('nombre') ?> <?= session()->get('apaterno'); ?> <?= session()->get('amaterno') ?>">
             </div>
-
+        -->
+                <?= session()->get('nombre') ?> <?= session()->get('apaterno'); ?> <?= session()->get('amaterno') ?>
         </div>
 
 
@@ -90,9 +92,9 @@
                 </li>
                 <li class="nav-header">MÓDULOS DEL SISTEMA</li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-circle nav-icon"></i>
-                        <p>Level 1</p>
+                    <a href="<?= base_url('admin/evaluacion') ?>" class="nav-link">
+                        <i class="fas fa-circle text-red nav-icon"></i>
+                        <p>EVALUACIÓN AL DESEMPEÑO DOCENTE</p>
                     </a>
                 </li>
             </ul>

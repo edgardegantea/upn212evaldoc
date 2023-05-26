@@ -39,6 +39,12 @@
                         <p>Asignaturas</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= base_url('estudiante/evaluacion') ?>" class="nav-link">
+                        <i class="nav-icon fas fa-school"></i>
+                        <p>Evaluación al Desempeño Docente</p>
+                    </a>
+                </li>
 
             </ul>
         </nav>

@@ -28,7 +28,7 @@ $this->section('title') ?>Preguntas de evaluación<?= $this->endSection();
                 <div class="card-header">
                     <h5 class="card-title">Preguntas de la evaluación</h5>
                     <a href="<?= base_url('admin/preguntas/new') ?>" class="btn btn-primary float-right">Nueva pregunta</a>
-                    <a href="<?= base_url('admin/') ?>" class="btn btn-outline-secondary float-right"><i
+                    <a href="<?= base_url('admin/') ?>" class="btn btn-outline-secondary float-right mr-2"><i
             class="fa fa-arrow-left"></i> Regresar</a>
                 </div>
 
