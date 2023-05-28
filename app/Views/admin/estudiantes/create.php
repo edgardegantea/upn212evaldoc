@@ -26,7 +26,7 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
 
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">MATRÍCULA:</label>
                             <input type="text"
@@ -39,13 +39,26 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">Sexo:</label>
                             <select class="form-control" name="sexo" id="">
                                 <option value="Mujer">Mujer</option>
                                 <option value="Hombre">Hombre</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group mb-3 has-validation">
+                            <label class="form-label">Nombre (s):</label>
+                            <input type="text"
+                                   class="form-control <?php if ($validation->getError('nombre')): ?>is-invalid<?php endif ?>"
+                                   name="nombre" placeholder="Tu nombre" value="<?php echo set_value('nombre'); ?>"/>
+                            <?php if ($validation->getError('nombre')): ?>
+                                <div class="invalid-feedback">
+                                    <?= $validation->getError('nombre') ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -64,6 +77,8 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
                             <?php endif; ?>
                         </div>
                     </div>
+
+                    <!--
                     <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">Apellido Paterno:</label>
@@ -92,7 +107,9 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
                             <?php endif; ?>
                         </div>
                     </div>
+                -->
                 </div>
+
 
                 <div class="row">
                     <div class="col md-4">

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Estudiante extends Model
+class EstudianteModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'estudiantes';
@@ -14,10 +14,10 @@ class Estudiante extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['codigo', 'nombre', 'apaterno', 'amaterno', 'curp', 'email', 'password', 'foto', 'sexo', 'bio', 'status'];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

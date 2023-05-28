@@ -1,12 +1,8 @@
 <?= $this->extend('admin/template/layout');
 $this->section('title') ?> Estudiantes <?= $this->endSection();
 ?>
-
 <?= $this->section('content'); ?>
-<div class="d-grid gap-2 d-md-flex justify-content-sm-end">
-    <a href="<?= base_url('admin/') ?>" class="btn btn-outline-secondary float-right mb-3"><i
-            class="fa fa-arrow-left"></i> Regresar</a>
-</div>
+
 
 <div class="">
     <div class="row">
@@ -28,8 +24,9 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
 
                 <div class="card-header">
                     <h5 class="card-title">Estudiantes</h5>
-                    <a href="<?= base_url('admin/usuarios/new') ?>" class="btn btn-primary float-right">Nuevo
-                        usuario</a>
+                    <a href="<?= base_url('admin/estudiantes/new') ?>" class="btn btn-primary float-right">Nuevo estudiante</a>
+                    <a href="<?= base_url('admin/') ?>" class="btn btn-default float-right mr-2"><i
+            class="fa fa-arrow-left"></i> Regresar</a>
                 </div>
 
                 <div class="card-body">
@@ -37,43 +34,33 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
                         <thead>
                         <tr>
                             <th>MATRÍCULA</th>
-                            <th>PERFIL</th>
                             <th>NOMBRE</th>
+                            <th>CURP</th>
                             <th>CORREO ELECTRÓNICO</th>
-                            <th>SEXO</th>
                             <th>ACCIONES</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php
-                        if (count($usuarios) > 0):
-                            foreach ($usuarios as $usuario): ?>
+                        if (count($estudiantes) > 0):
+                            foreach ($estudiantes as $estudiante): ?>
                                 <tr>
-                                    <td><?= $usuario['codigo'] ?> </td>
-                                    <td>
-                                        <?php if ($usuario['rol'] == 'admin') : ?>
-                                            <p class="text-uppercase badge bg-danger"><?= $usuario['rol'] ?></p>
-                                        <?php elseif ($usuario['rol'] == 'docente') : ?>
-                                            <p class="text-uppercase badge bg-primary"><?= $usuario['rol'] ?></p>
-                                        <?php else : ?>
-                                            <p class="text-uppercase badge bg-secondary"><?= $usuario['rol'] ?></p>
-                                        <?php endif; ?>
-                                    </td>
+                                    <td><?= $estudiante['codigo'] ?> </td>
+                                    <td><?= $estudiante['nombre'] ?> <?= $estudiante['apaterno'] ?> <?= $estudiante['amaterno'] ?></td>
 
-                                    <td><?= $usuario['nombre'] ?> <?= $usuario['apaterno'] ?> <?= $usuario['amaterno'] ?> </td>
-                                    <td><?= $usuario['email'] ?></td>
-                                    <td><?= $usuario['sexo'] ?></td>
+                                    <td><?= $estudiante['curp'] ?></td>
+                                    <td><?= $estudiante['email'] ?></td>
                                     <td class="d-flex">
-                                        <a href="<?= base_url('admin/estudiantes/' . $usuario['id']) ?>"
+                                        <a href="<?= base_url('admin/estudiantes/' . $estudiante['id']) ?>"
                                            class="btn btn-default" title="Ver"><i class="fas fa-eye"></i></a>
-                                        <a href="<?= base_url('admin/estudiantes/' . $usuario['id'] . '/edit') ?>"
+                                        <a href="<?= base_url('admin/estudiantes/' . $estudiante['id'] . '/edit') ?>"
                                            class="btn btn-default" title="Editar"><i class="fas fa-edit"></i></a>
                                         <form class="display-none" method="post"
-                                              action="<?= base_url('admin/estudiantes/' . $usuario['id']) ?>"
-                                              id="usuarioDeleteForm<?= $usuario['id'] ?>">
+                                              action="<?= base_url('admin/estudiantes/' . $estudiante['id']) ?>"
+                                              id="estudianteDeleteForm<?= $estudiante['id'] ?>">
                                             <input type="hidden" name="_method" value="DELETE"/>
                                             <a href="javascript:void(0)"
-                                               onclick="deleteUsuario('usuarioDeleteForm<?= $usuario['id'] ?>')"
+                                               onclick="deleteEstudiante('estudianteDeleteForm<?= $estudiante['id'] ?>')"
                                                class="btn btn-default" title="Eliminar"><i class="fas fa-trash text-red"></i></a>
                                         </form>
                                     </td>
@@ -82,7 +69,7 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
                         else: ?>
                             <tr rowspan="1">
                                 <td colspan="4">
-                                    <h6 class="text-danger text-center">No hay información de usuarios registrados</h6>
+                                    <h6 class="text-danger text-center">No hay información de estudiantes registrados</h6>
                                 </td>
                             </tr>
                         <?php endif ?>
@@ -90,10 +77,9 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
                         <tfoot>
                         <tr>
                             <th>MATRÍCULA</th>
-                            <th>PERFIL</th>
                             <th>NOMBRE</th>
+                            <th>CURP</th>
                             <th>CORREO ELECTRÓNICO</th>
-                            <th>SEXO</th>
                             <th>ACCIONES</th>
                         </tr>
                         </tfoot>
@@ -106,7 +92,7 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
 </div>
 
 <script>
-    function deleteUsuario(formId) {
+    function deleteEstudiante(formId) {
         var confirm = window.confirm('¿Desea eliminar al estudiante seleccionado? Esta acción es irreversible.');
         if (confirm == true) {
             document.getElementById(formId).submit();

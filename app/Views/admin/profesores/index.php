@@ -25,7 +25,7 @@ $this->section('title') ?>Profesores<?= $this->endSection();
                 <div class="card-header">
                     <h5 class="card-title">Profesores</h5>
                     <a href="<?= base_url('admin/profesores/new') ?>" class="btn btn-primary float-right">Nuevo profesor</a>
-                    <a href="<?= base_url('admin/') ?>" class="btn btn-outline-secondary float-right mr-2"><i
+                    <a href="<?= base_url('admin/') ?>" class="btn btn-default float-right mr-2"><i
             class="fa fa-arrow-left"></i> Regresar</a>
                 </div>
 

@@ -142,7 +142,7 @@
 
     </main>
 
-    <footer class="mt-auto text-white-50">
+    <footer class="mt-auto text-white-50 text-centered">
         <p>Developed by <a href="#" class="text-white">EDA</a>, for <a href="http://www.upn212teziutlan.edu.mx/"
                                                                        target="_blank" class="text-white">UPN-212-Teziutlán</a>. <?php echo date('Y'); ?>
         </p>
