@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css'); ?>">
 
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.czz'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css'); ?>">
 
     <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css?v=3.2.0'); ?>">
 
@@ -125,6 +125,7 @@
             </li>
             -->
 
+<!--
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                     <i class="far fa-comments"></i>
@@ -189,6 +190,9 @@
                     <i class="fas fa-expand-arrows-alt"></i>
                 </a>
             </li>
+
+-->
+
 
             <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">

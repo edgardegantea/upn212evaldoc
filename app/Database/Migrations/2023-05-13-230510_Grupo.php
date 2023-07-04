@@ -12,17 +12,18 @@ class Grupo extends Migration
         $this->db->disableForeignKeyChecks();
         $this->forge->addField([
             'id'            => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+            'abreviatura'   => ['type' => 'varchar', 'constraint' => 20],
             'nombre'        => ['type' => 'varchar', 'constraint' => 50, 'unique' => true],
-            'estudiante'    => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => false],
-            'asignatura'    => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => false],
-            'created_at'    => ['type' => 'timestamp', 'default' => new RawSql('CURRENT_TIMESTAMP')],
-            'updated_at'    => ['type' => 'timestamp', 'null' => true],
-            'deleted_at'    => ['type' => 'timestamp', 'null' => true]
+            // 'estudiante'    => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => false],
+            // 'asignatura'    => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => false],
+            // 'created_at'    => ['type' => 'timestamp', 'default' => new RawSql('CURRENT_TIMESTAMP')],
+            // 'updated_at'    => ['type' => 'timestamp', 'null' => true],
+            // 'deleted_at'    => ['type' => 'timestamp', 'null' => true]
         ]);
 
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('estudiante', 'usuarios', 'id');
-        $this->forge->addForeignKey('asignatura', 'asignaturas', 'id');
+        // $this->forge->addForeignKey('estudiante', 'usuarios', 'id');
+        // $this->forge->addForeignKey('asignatura', 'asignaturas', 'id');
 
         $this->forge->createTable('grupos', true);
 

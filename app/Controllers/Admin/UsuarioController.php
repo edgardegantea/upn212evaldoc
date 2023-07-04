@@ -82,7 +82,7 @@ class UsuarioController extends ResourceController
             'apaterno'  => $this->request->getVar('apaterno'),
             'amaterno'  => $this->request->getVar('amaterno'),
             'email'     => $this->request->getVar('email'),
-            'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            'password'  => md5($this->request->getVar('password')),
             'foto'      => $this->request->getVar('foto'),
             'sexo'      => $this->request->getVar('sexo'),
             'bio'       => $this->request->getVar('bio')

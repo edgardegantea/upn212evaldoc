@@ -1,0 +1,481 @@
+INFO - 2023-06-24 16:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 16:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 16:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-24 17:11:45 --> mysqli_sql_exception: Invalid default value for 'fechaNacimiento' in D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `e...', 0)
+#1 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\app\Database\Migrations\2023-05-24-200304_Estudiante.php(33): CodeIgniter\Database\Forge->createTable('estudiantes', true)
+#5 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\MigrationRunner.php(877): App\Database\Migrations\Estudiante->up()
+#6 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+INFO - 2023-06-24 17:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 17:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 17:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 17:14:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ProfesorController::$session is deprecated in APPPATH\Controllers\Admin\ProfesorController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\ProfesorController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 17:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 17:14:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ProfesorController::$session is deprecated in APPPATH\Controllers\Admin\ProfesorController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\ProfesorController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 17:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 17:15:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ProfesorController::$session is deprecated in APPPATH\Controllers\Admin\ProfesorController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\ProfesorController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 17:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 17:15:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH\Controllers\Admin\AsignaturaController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:00:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ProfesorController::$session is deprecated in APPPATH\Controllers\Admin\ProfesorController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\ProfesorController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:08:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ProfesorController::$session is deprecated in APPPATH\Controllers\Admin\ProfesorController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\ProfesorController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:08:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH\Controllers\Admin\UsuarioController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:08:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:11:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:24:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:41:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 18:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 18:43:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 20:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 20:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 20:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-24 20:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-06-24 20:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-06-24 20:26:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH\Controllers\Admin\EstudianteController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')

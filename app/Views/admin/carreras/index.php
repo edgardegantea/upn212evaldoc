@@ -35,6 +35,7 @@ $this->section('title') ?>Carreras<?= $this->endSection(); ?>
                         <table id="example1" class="table table-striped">
                             <thead>
                             <tr>
+                                <th>ABREVIATURA</th>
                                 <th>CARRERA</th>
                                 <th>DESCRIPCIÓN</th>
                                 <th>CRÉDITOS TOTALES</th>
@@ -46,6 +47,7 @@ $this->section('title') ?>Carreras<?= $this->endSection(); ?>
                             if (count($carreras) > 0):
                                 foreach ($carreras as $carrera): ?>
                                     <tr>
+                                        <td><?= $carrera['abreviatura'] ?></td>
                                         <td>
                                             <?= $carrera['nombre'] ?>
                                         </td>

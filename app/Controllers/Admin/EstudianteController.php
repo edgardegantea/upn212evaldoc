@@ -74,17 +74,18 @@ class EstudianteController extends ResourceController
         }
 
         $this->estudiante->save([
-            'codigo'    => $this->request->getVar('codigo'),
-            'nombre'    => $this->request->getVar('nombre'),
-            // 'apaterno'  => $this->request->getVar('apaterno'),
-            // 'amaterno'  => $this->request->getVar('amaterno'),
-            'curp'      => $this->request->getVar('curp'),
-            'email'     => $this->request->getVar('email'),
-            'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
-            'foto'      => $this->request->getVar('foto'),
-            'sexo'      => $this->request->getVar('sexo'),
-            'bio'       => $this->request->getVar('bio'),
-            'status'    => 'activo'
+            'codigo'            => $this->request->getVar('codigo'),
+            'nombre'            => $this->request->getVar('nombre'),
+            // 'apaterno'       => $this->request->getVar('apaterno'),
+            // 'amaterno'       => $this->request->getVar('amaterno'),
+            'curp'              => $this->request->getVar('curp'),
+            'email'             => $this->request->getVar('email'),
+            'password'          => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            'foto'              => $this->request->getVar('foto'),
+            'sexo'              => $this->request->getVar('sexo'),
+            'fechaNacimiento'   => $this->request->getVar('fechaNacimiento'),
+            'bio'               => $this->request->getVar('bio'),
+            'status'            => 'activo'
         ]);
 
         return redirect()->to(site_url('/admin/estudiantes'));

@@ -37,6 +37,7 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
                             <th>NOMBRE</th>
                             <th>CURP</th>
                             <th>CORREO ELECTRÓNICO</th>
+                            <th>FECHA DE NACIMIENTO</th>
                             <th>ACCIONES</th>
                         </tr>
                         </thead>
@@ -50,6 +51,7 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
 
                                     <td><?= $estudiante['curp'] ?></td>
                                     <td><?= $estudiante['email'] ?></td>
+                                    <td><?= $estudiante['fechaNacimiento'] ?></td>
                                     <td class="d-flex">
                                         <a href="<?= base_url('admin/estudiantes/' . $estudiante['id']) ?>"
                                            class="btn btn-default" title="Ver"><i class="fas fa-eye"></i></a>
@@ -80,6 +82,7 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
                             <th>NOMBRE</th>
                             <th>CURP</th>
                             <th>CORREO ELECTRÓNICO</th>
+                            <th>FECHA DE NACIMIENTO</th>
                             <th>ACCIONES</th>
                         </tr>
                         </tfoot>

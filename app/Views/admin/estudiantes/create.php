@@ -1,17 +1,11 @@
 <?= $this->extend('admin/template/layout');
 $this->section('title') ?>Crear estudiante<?= $this->endSection();
-$this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?= $this->endSection();
 ?>
 
 <?= $this->section('content') ?>
 
     <div class="">
         <?php $validation = \Config\Services::validation(); ?>
-        <div class="row py-4">
-            <div class="col-xl-12 text-end">
-                <a href="<?= base_url('admin/estudiantes') ?>" class="btn btn-danger">Cancelar y regresar</a>
-            </div>
-        </div>
     </div>
 
 
@@ -21,6 +15,7 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
         <div class="card primary">
             <div class="card-header">
                 <h5 class="card-title">Crear usuario</h5>
+                <a href="<?= base_url('admin/estudiantes') ?>" class="btn btn-danger float-right">Cancelar y regresar</a>
             </div>
 
 
@@ -50,13 +45,13 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
                     </div>
                     <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
-                            <label class="form-label">Nombre (s):</label>
-                            <input type="text"
-                                   class="form-control <?php if ($validation->getError('nombre')): ?>is-invalid<?php endif ?>"
-                                   name="nombre" placeholder="Tu nombre" value="<?php echo set_value('nombre'); ?>"/>
-                            <?php if ($validation->getError('nombre')): ?>
+                            <label class="form-label">Fecha de nacimiento:</label>
+                            <input type="date"
+                                   class="form-control <?php if ($validation->getError('fechaNacimiento')): ?>is-invalid<?php endif ?>"
+                                   name="fechaNacimiento" placeholder="Tu fecha de nacimiento" value="<?php echo set_value('fechaNacimiento'); ?>"/>
+                            <?php if ($validation->getError('fechaNacimiento')): ?>
                                 <div class="invalid-feedback">
-                                    <?= $validation->getError('nombre') ?>
+                                    <?= $validation->getError('fechaNacimiento') ?>
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -64,7 +59,7 @@ $this->section('encabezado') ?><p class="text-uppercase">Nuevo estudiante</p><?=
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">Nombre (s):</label>
                             <input type="text"
